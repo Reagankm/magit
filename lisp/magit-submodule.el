@@ -311,8 +311,7 @@ are additional safety precausions in place, so you might be able
 to recover from making a mistake here, but don't count on it."
   (interactive
    (list (if-let ((modules (magit-region-values 'magit-module-section t)))
-             (magit-confirm 'remove-modules nil
-               (format "Remove %%i modules") nil modules)
+             (magit-confirm 'remove-modules nil "Remove %i modules" nil modules)
            (list (magit-read-module-path "Remove module")))
          (magit-submodule-filtered-arguments "--force")
          current-prefix-arg))

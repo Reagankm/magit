@@ -252,7 +252,7 @@ Removing modules:
 
   `remove-modules' When you remove the working directory of a
   module that does not contain uncommitted changes, then that is
-  safer than doing so when there and or uncommitted change and/or
+  safer than doing so when there are uncommitted changes and/or
   when you also remove the gitdir.  Still, you don't want to do
   that by accident.
 
@@ -269,7 +269,7 @@ Removing modules:
   Actually there are some safety precausions in place, that might
   help you out if you make an unwise choice here, but don't count
   on it.  In case of emergency, stay calm and check the stash and
-  the system trash for traces of lost work.
+  the `trash-directory' for traces of lost work.
 
 Various:
 
