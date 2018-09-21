@@ -638,7 +638,7 @@ section lineage.  This command is intended for debugging purposes."
                        (cond ((stringp val)
                               (substring-no-properties val))
                              ((eieio-object-p val)
-                              (cl-prin1-to-string val))
+                              (cl-print-to-string val))
                              (t
                               val)))
                      (if ident
